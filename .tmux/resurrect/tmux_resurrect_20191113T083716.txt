@@ -1,0 +1,4 @@
+pane	Python	0	:zsh	1	:*	0	:/home/vietspaceanh	0	zsh	:
+pane	Python	0	:zsh	1	:*	1	:/home/vietspaceanh	1	zsh	:
+window	Python	0	1	:*	e3ca,87x30,0,0{43x30,0,0,0,43x30,44,0,1}
+state	Python	

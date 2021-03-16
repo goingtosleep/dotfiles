@@ -1,0 +1,4 @@
+pane	Python	0	:vim | main.py	1	:*	0	:/home/vietspaceanh	0	python	:/home/vietspaceanh/miniconda3/bin/python /home/vietspaceanh/miniconda3/bin/ipython
+pane	Python	0	:vim | main.py	1	:*	1	:/home/vietspaceanh/Workspace/Python	1	vim	:vim main.py
+window	Python	0	1	:*	c631,113x35,0,0{38x35,0,0,0,74x35,39,0,1}
+state	Python	

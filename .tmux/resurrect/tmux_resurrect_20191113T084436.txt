@@ -1,0 +1,4 @@
+pane	Python	0	:vim | main.py	1	:*	0	:/home/vietspaceanh	0	zsh	:
+pane	Python	0	:vim | main.py	1	:*	1	:/home/vietspaceanh/Workspace/Python	1	vim	:vim main.py
+window	Python	0	1	:*	af9a,105x32,0,0{44x32,0,0,1,60x32,45,0,2}
+state	Python	

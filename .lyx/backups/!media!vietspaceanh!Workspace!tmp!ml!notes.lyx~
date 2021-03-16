@@ -1,0 +1,332 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "ae" "default"
+\font_sans "lmss" "default"
+\font_typewriter "cmtl" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Preliminaries
+\end_layout
+
+\begin_layout Standard
+This part aims at providing common 
+\begin_inset Quotes eld
+\end_inset
+
+keywords
+\begin_inset Quotes erd
+\end_inset
+
+ usually seen in Machine Learning and a short explanation for each 
+\begin_inset Quotes eld
+\end_inset
+
+keyword
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Mathematical Notations
+\end_layout
+
+\begin_layout Subsection
+Spaces
+\end_layout
+
+\begin_layout Standard
+Space of data, space of parameters / hyperparameters and space of predictive
+ functions.
+\end_layout
+
+\begin_layout Standard
+How elements are distributed in the space and search for something in that
+ space.
+\end_layout
+
+\begin_layout Standard
+Space as data / parameters / hyperparameters / model container
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+normed and Hilbert spaces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{C}^{1},\mathbb{C}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+normalization
+\end_layout
+
+\begin_layout Standard
+embedding spaces
+\end_layout
+
+\begin_layout Standard
+manifolds
+\end_layout
+
+\begin_layout Standard
+Estimate the data distribution in the space
+\end_layout
+
+\begin_layout Standard
+Find the optimal element in space
+\end_layout
+
+\begin_layout Subsection
+Functions / Mappings
+\end_layout
+
+\begin_layout Subsection
+Operators
+\end_layout
+
+\begin_layout Section
+Probability
+\end_layout
+
+\begin_layout Subsection
+Random variable
+\end_layout
+
+\begin_layout Subsection
+Distribution
+\end_layout
+
+\begin_layout Subsection
+Join distribution
+\end_layout
+
+\begin_layout Subsection
+Marginal distribution
+\end_layout
+
+\begin_layout Subsection
+Conditional distribution
+\end_layout
+
+\begin_layout Section
+Optimization
+\end_layout
+
+\begin_layout Subsection
+Model parameters
+\end_layout
+
+\begin_layout Subsection
+Hyperparameters
+\end_layout
+
+\begin_layout Part
+Linear Algorithms
+\end_layout
+
+\begin_layout Standard
+Hyperplan 
+\begin_inset Formula $\left\langle w,x\right\rangle +b.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Linear SVM Classification
+\end_layout
+
+\begin_layout Standard
+Sides of a hyperplane 
+\begin_inset Formula $+$
+\end_inset
+
+ or 
+\begin_inset Formula $-$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Labels 
+\begin_inset Formula $y\in\left\{ -1,1\right\} $
+\end_inset
+
+ (associated with sides).
+\end_layout
+
+\begin_layout Standard
+Predictive function (model)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{y}=f(x)=\text{sgn}\left(\left\langle w,x\right\rangle +b\right)\in\left\{ -1,1\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Logistic Regression
+\end_layout
+
+\begin_layout Section
+Linear Regressions
+\end_layout
+
+\begin_layout Part
+Tree-based Algorithms
+\end_layout
+
+\begin_layout Subsection
+Decision Tree
+\end_layout
+
+\begin_layout Subsection
+Random Forest
+\end_layout
+
+\begin_layout Subsection
+Gradient Boosting
+\end_layout
+
+\begin_layout Subsection
+Extreme Gradient Boosting
+\end_layout
+
+\begin_layout Subsection
+Light Gradient Boosting
+\end_layout
+
+\begin_layout Part
+Probabilistic Algorithms
+\end_layout
+
+\begin_layout Standard
+Naive Bayes
+\end_layout
+
+\begin_layout Standard
+Gaussian Mixture Models
+\end_layout
+
+\begin_layout Standard
+Gaussian Process
+\end_layout
+
+\begin_layout Part
+Feature Engineering
+\end_layout
+
+\begin_layout Section
+Missing Values
+\end_layout
+
+\begin_layout Section
+Categorical 
+\end_layout
+
+\begin_layout Section
+Numeric
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

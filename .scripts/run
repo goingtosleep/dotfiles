@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+
+from multiprocessing import Pool
+import subprocess
+import argparse
+
+# Arguments
+parser = argparse.ArgumentParser()
+
+parser.add_argument('file', metavar='file', type=str, help='filename')
+parser.add_argument("-b", "--beamer", help="export to beamer", action="store_true")
+
+args = parser.parse_args()
+
+filename = args.file
+
+# Extract filename
+if '.' in filename:
+    name, ext = filename.split('.') 
+else: 
+    name, ext = filename, 'md'
+
+output_name = 'out_' + name
+
+# To beamer?
+to_beamer = True if args.beamer else False
+
+# Commands
+shortcut = 'cd ~/.scripts/inkscape-shortcut-manager && python3 main.py'
+entr_beamer = f'echo {name}.md | entr -as "pandoc {name}.md -t beamer -o {output_name}.pdf --filter pandoc-numbering -H ~/.pandoc/header.tex"'
+entr_lecture = f'echo {name}.md | entr -as "pandoc {name}.md -o {output_name}.pdf --filter pandoc-numbering --metadata-file ~/.pandoc/default.yaml -H ~/.pandoc/header.tex"'
+
+
+# Select output types
+entr = entr_beamer if to_beamer else entr_lecture
+
+# Functions
+def apply(command):
+    subprocess.call(command, shell=True)
+    
+# Run all functions in parallel    
+pool = Pool()
+pool.map(apply, [shortcut, entr])
+

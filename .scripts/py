@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -z $CONDA_PREFIX ]
+then
+	echo -e '\e[31mPlease activate a conda environment first!'
+else
+
+	if [ -z ${1+x} ] 
+	then 
+		session_name='python' 
+	else 
+		session_name=$1 
+	fi
+
+	default_env=$CONDA_DEFAULT_ENV
+
+	tmux new-session -s $session_name \; \
+	send-keys act Space $default_env C-m \; \
+	send-keys 'ipython' C-m \; \
+	split-window -h \; \
+		send-keys act Space $default_env C-m \; \
+		send-keys 'vim' C-m \;
+fi
+
+  
