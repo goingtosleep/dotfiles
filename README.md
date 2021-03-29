@@ -34,5 +34,5 @@ Editing:
 - open_folder: fuzzy search for folders and open.
 
 # fish functions
-- py: create a `tmux session` with 2 panes for `python`. Automatically restore previous `vim` session or create a new `main.py` if there's no previous session.
+- py: create a `tmux session` with 2 panes for `python`. Automatically restore previous `vim` session or create a new `main.py` if there's no previous session.\
 Usage: `act conda_env_name && py session_name`.
